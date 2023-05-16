@@ -1,11 +1,18 @@
 const sequelize = require('../config/connection');
-const seedMealplan = require('./mealPlanData');
+
+const seedmealplan = require('./mealplanData');
+
+
 const seedUserData = require('./userData');
 
 const seedAll = async () => {
     await sequelize.sync({ force: true});
-    await seedMealplan();
+
+    await seedmealplan();
     await seedUserData();
+    
+
+
 
     process.exit(0);
 };
