@@ -1,16 +1,19 @@
 const router = require('express').Router();
 const {User, Mealplan} = require('../models/index.js');
 
-router.get ('/',  (req, res) => {
+router.get ('/', async (req, res) => {
     try {
-        const dbUserData =  User.findAll({});
+        const dbUserData = await User.findAll({});
+        const mappedData = dbUserData.map((user) => {
+            user.get({plain: true})
+        })
+        console.log(dbUserData);
+        res.json(mappedData);
+        //res.render to populate the main
 
-        const users = dbUserData.map((user) =>
-        user.get({ plain: true})
-        );
     } catch (err) {
         console.log(err);
-        res.status(500).json(err)
+        res.status(500).json(err);
     }
 });
 
