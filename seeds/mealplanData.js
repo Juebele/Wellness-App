@@ -1,8 +1,8 @@
-const { Mealplan } = require('../models/mealplan');
+const { Mealplan } = require('../models');
 
 const mealplanData = [
     {
-        userid: 8,
+        userid: 2,
         breakfast: "Banana",
         lunch: "Five dollar footlong",
         dinner: "Vodka RedBull",
@@ -23,28 +23,28 @@ const mealplanData = [
         dayid: 3
     },
     {
-        userid: 12,
+        userid: 1,
         breakfast: "Oysters rockefeller",
         lunch: "Double quarter pounder w/ cheese",
         dinner: "Six unsalted crackers",
         dayid: 4
     },
     {
-        userid: 7,
+        userid: 4,
         breakfast: "Yogurt & granola",
         lunch: "Horse meat sandwich",
         dinner: "Filet mignon",
         dayid: 5
     },
     {
-        userid: 16,
+        userid: 3,
         breakfast: "Peanut butter sandwich",
         lunch: "Boiled peanuts",
         dinner: "Perfect Martini",
         dayid: 6
     },
     {
-        userid: 6,
+        userid: 2,
         breakfast: "Spinach casserole",
         lunch: "Edamame",
         dinner: "tap water with lemon twist",
@@ -52,4 +52,6 @@ const mealplanData = [
     },
 ];
 
-const seedMealplan = () => Mealplan.bulkCreate(mealplanData);
+const seedmealPlan = () => Mealplan.bulkCreate(mealplanData);
+
+module.exports = seedmealPlan;
