@@ -2,14 +2,29 @@
 const express = require('express');
 const routes = require('./controllers');
 const sequelize = require('./config/connection');
+const exphbs = require('express-handlebars');
 const models =  require('./models');
+const handlebars = require('handlebars');
+
+
+
+// const helpers = require('./utils/helpers');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+handlebars.registerHelper('eq', function (a, b, options) {
+    return a === b ? options.fn(this) : options.inverse(this);
+  });
+
 //Establishes middleware functionality.
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
+
+const hbs = exphbs.create();
+
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
 
 app.use(routes);
 
