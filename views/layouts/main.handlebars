@@ -43,10 +43,29 @@
   <div class="grid row text-center" id="breakfast">
     <div class="col">Breakfast</div>
     {{!-- sunday's breakfast --}}
-    <button class="col">{{mealplan.[0].breakfast}}</button>
-    {{!-- {{#eq 1 1}}{{/eq}} --}}
+
+    <div class="container">
+  <div class="grid row text-center" id="breakfast">
+    <div class="col">Breakfast</div>
+    {{#each mealplan}}
+      <textarea class="col">{{this.breakfast}}</textarea>
+    {{/each}}
+  </div>
+  <div class="grid row text-center" id="lunch">
+    <div class="col">Lunch</div>
+    {{#each mealplan}}
+      <textarea class="col">{{this.lunch}}</textarea>
+    {{/each}}
+  </div>
+  <div class="grid row text-center" id="dinner">
+    <div class="col">Dinner</div>
+    {{#each mealplan}}
+      <textarea class="col">{{this.dinner}}</textarea>
+    {{/each}}
+  </div>
+</div>
     {{!-- sunday's breakfast --}}
-    <button class="col">{{mealplan.[1].breakfast}}</button>
+    {{!-- <button class="col">{{mealplan.[1].breakfast}}</button>
     <button class="col">{{mealplan.[2].breakfast}}</button>
     <button class="col">{{mealplan.[3].breakfast}}</button>
     <button class="col">{{mealplan.[4].breakfast}}</button>
@@ -75,13 +94,7 @@
     <button class="col">{{mealplan.[5].dinner}}</button>
     <button class="col">{{mealplan.[6].dinner}}</button>
   </div>
-</div>
-
-{{!-- form to input meal for that meal of the day --}}
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Please input meal </label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
+</div> --}}
 
 <footer>
   <div>
