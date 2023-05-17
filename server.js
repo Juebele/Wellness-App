@@ -7,13 +7,9 @@ const models =  require('./models');
 
 const handlebars = require('handlebars');
 
-
-
 // const helpers = require('./utils/helpers');
 
-
-
-const passport = require('passport');
+// const passport = require('passport');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
