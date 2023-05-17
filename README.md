@@ -10,6 +10,7 @@
 
 
 ## How does it work?
+
      This app makes use of advanced Javascript, npm packages, and databases. Our app uses a database to keep track of users, their meal plans, and their workout plans. This data is then populated dynamically using handlebars files to create a page that's unique to each user. All of the API routes are done with a series of .js files that use proper MVC principles to compartmentailze code.
 
 ## Dependencies
