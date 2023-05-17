@@ -1,3 +1,16 @@
+html {
+    /* To make use of full height of page*/
+    min-height: 100%;
+    margin: 0;
+}
+body {
+    min-height: 100%;
+    margin: 0;
+    background-image: linear-gradient(to bottom right, white, blue);
+
+}
+
 footer {
     justify-content: end;
 }
+
