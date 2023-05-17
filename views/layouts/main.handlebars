@@ -25,6 +25,31 @@
     </div>
   </header>
 
+  <header>
+    <div class="grid row text-center">
+      <h1 class="col-6">Amazing Title</h1>
+      <div class="col-6 grid row text-center">
+        <div class="container row col-8" id="input-forms">
+        <div>
+          <textarea class="form-control text-center" id="exampleFormControlTextarea1" placeholder="username"></textarea>
+        </div>
+        <div>
+          <textarea class="form-control text-center" id="exampleFormControlTextarea1" placeholder="password"></textarea>
+        </div>
+        </div>
+        <div class="container row col-4">
+          {{#if loggedIn}}
+        <button>Show Workout Plan</button>
+        <button>Log Out </button>
+          {{else}}
+        <button>Log In</button>
+        <button>Sign Up</button>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  </header>
+
 <div class="grid row text-center" id="week-meals">
   <div>
     <h2>Meal Plan for the Week</h2>
@@ -63,6 +88,7 @@
       <textarea class="col">{{this.dinner}}</textarea>
     {{/each}}
   </div>
+  <button>Submit All</button>
 </div>
     {{!-- sunday's breakfast --}}
     {{!-- <button class="col">{{mealplan.[1].breakfast}}</button>
