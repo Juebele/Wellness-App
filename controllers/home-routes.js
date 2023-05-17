@@ -6,9 +6,11 @@ const {User, Mealplan} = require('../models/index.js');
 router.get ('/', async (req, res) => {
     try {
         const dbUserData = await User.findAll({});
+
         const mappedData = dbUserData.map((user) => user.get({plain: true}))
         console.log(mappedData);
         // res.json(dbUserData);
+
         //res.render to populate the main
         res.render('homepage', {users: mappedData});
 
