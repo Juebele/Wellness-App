@@ -1,3 +1,33 @@
+html {
+    /* To make use of full height of page*/
+    min-height: 100%;
+    margin: 0;
+}
+body {
+    min-height: 100%;
+    margin: 0;
+    background-image: linear-gradient(to bottom right, white, lightblue, blue);
+
+}
+
 footer {
     justify-content: end;
+}
+
+header textarea {
+    margin: 1em;
+}
+
+header button {
+    margin: 1em;
+    border-radius: 1em;
+}
+
+header h1 {
+    align-content: center;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
 }
