@@ -7,3 +7,5 @@ We created this application to demonstrate and practice full-stack web developme
 
 ## How does it work?
 Our app uses a database to keep track of users, their meal plans, and their workout plans. This data is then populated dynamically using handlebars files to create a page that's unique to each user.
+
+

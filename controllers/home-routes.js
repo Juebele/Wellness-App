@@ -47,7 +47,7 @@ router.get('/', async (req, res) => {
       console.log(mpMappedData);
       // res.status(200).json(mpUserData);
       res.render('homepage', {mealplan: mpMappedData});
-  
+      //console.log(mpMappedData);
   
     } catch (err) {
       console.log(err);
