@@ -8,7 +8,7 @@ router.get ('/', async (req, res) => {
         console.log(mappedData);
         // res.json(dbUserData);
         //res.render to populate the main
-        res.render('homepage', {userid:mappedData[0].id});
+        res.render('homepage', {users: mappedData});
 
     } catch (err) {
         console.log(err);
