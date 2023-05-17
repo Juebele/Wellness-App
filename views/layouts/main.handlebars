@@ -43,7 +43,8 @@
   <div class="grid row text-center" id="breakfast">
     <div class="col">Breakfast</div>
     {{!-- sunday's breakfast --}}
-    <button class="col">{{#if (eq id 1)}}{{breakfast}}{{/if}}</button>
+    <button class="col">{{#eq userid 1}}{{breakfast}}{{/eq}}</button>
+    
     {{!-- sunday's breakfast --}}
     <button class="col">2</button>
     <button class="col">3</button>
