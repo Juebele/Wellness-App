@@ -22,6 +22,9 @@ const submitMP = async (event) => {
       //console.log(jsonStringBfast);
       breakfastItems.push(jsonStringBfast);
      
+      //console.log(jsonStringBfast);
+      breakfastItems.push(jsonStringBfast);
+     
     }
  
     const breakfastString = breakfastItems.join(',');

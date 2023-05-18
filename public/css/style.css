@@ -10,25 +10,21 @@ body {
 }
 
 footer {
-    justify-content: end;
 }
 
 header textarea {
     margin: 1em;
 }
 
-/* header button {
-    margin: 1em;
-    border-radius: 1em;
-} */
-
 header h1 {
+    font-size: 4rem;
     font-family: 'Lobster', cursive;
     align-content: center;
     justify-content: center;
 }
 
 header a {
+    margin-top: 1px;
     border-radius: .5em;
     padding: 3px;
     margin: 1em;
@@ -48,12 +44,22 @@ ul {
     list-style: none;
 }
 
-textarea {
-    justify-content: center;
-    margin-right: 300px;
+select {
+    margin: 10px;
+    border-style: none;
+    background-color: whitesmoke;
 }
 
-#submit {
-    background-color: aquamarine;
+form textarea {
+    justify-content: center;
+    font-family: 'Ysabeau', sans-serif;
+    font-style: italic;
+}
+
+.submit {
+    background-color:whitesmoke;
     width: auto;
+    height: auto;
+    border-radius: 1em;
+    border-style: none;
 }
