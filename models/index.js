@@ -1,5 +1,5 @@
 const User = require('./User');
-const Mealplan = require('./mealplan')
+const Mealplan = require('./mealplan');
 
 //associations
 User.hasMany(Mealplan, {
