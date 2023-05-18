@@ -10,7 +10,6 @@ body {
 }
 
 footer {
-    justify-content: end;
 }
 
 header textarea {
@@ -18,12 +17,14 @@ header textarea {
 }
 
 header h1 {
+    font-size: 4rem;
     font-family: 'Lobster', cursive;
     align-content: center;
     justify-content: center;
 }
 
 header a {
+    margin-top: 1px;
     border-radius: .5em;
     padding: 3px;
     margin: 1em;
@@ -45,13 +46,20 @@ ul {
 
 select {
     margin: 10px;
+    border-style: none;
+    background-color: whitesmoke;
 }
 
 form textarea {
     justify-content: center;
+    font-family: 'Ysabeau', sans-serif;
+    font-style: italic;
 }
 
 .submit {
-    background-color: aquamarine;
+    background-color:whitesmoke;
     width: auto;
+    height: auto;
+    border-radius: 1em;
+    border-style: none;
 }
