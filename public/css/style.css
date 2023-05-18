@@ -55,3 +55,14 @@ button {
 ul {
     list-style: none;
 }
+
+#week-meals button  {
+    font-size: 12px;
+    border-radius: 5px;
+    height: auto;
+    margin: .2em;
+}
+
+#submit button {
+    width:auto;
+}
