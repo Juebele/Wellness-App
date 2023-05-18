@@ -9,9 +9,6 @@ body {
     background-image: linear-gradient(to bottom right, white, lightblue, purple);
 }
 
-footer {
-}
-
 header textarea {
     margin: 1em;
 }
@@ -56,6 +53,15 @@ form textarea {
     justify-content: center;
     font-family: 'Ysabeau', sans-serif;
     font-style: italic;
+}
+
+#mealPlanContainer {
+background-color: whitesmoke;
+width: auto;
+height: auto;
+align-content: start;
+align-items: start;
+text-align: start;
 }
 
 /* .submit {
