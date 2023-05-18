@@ -6,10 +6,6 @@ const exphbs = require('express-handlebars');
 const models =  require('./models');
 const path = require('path');
 
-<<<<<<< HEAD
-=======
-
->>>>>>> main
 
 
 const handlebars = require('handlebars');
