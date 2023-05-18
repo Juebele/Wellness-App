@@ -6,6 +6,10 @@ const exphbs = require('express-handlebars');
 const models =  require('./models');
 const path = require('path');
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 
 
 const handlebars = require('handlebars');
@@ -31,6 +35,10 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true}));
 
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+
 
 const hbs = exphbs.create();
 
