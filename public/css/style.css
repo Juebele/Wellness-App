@@ -51,3 +51,13 @@ button {
 ul {
     list-style: none;
 }
+
+textarea {
+    justify-content: center;
+    margin-right: 300px;
+}
+
+#submit {
+    background-color: aquamarine;
+    width: auto;
+}
