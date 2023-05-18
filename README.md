@@ -1,8 +1,8 @@
 # Full-Stack Wellness App
 
-## Who We Are
-
 ![SC](./images/full-snack.png)
+
+## Who We Are
 Full-Snack is  dedicated to revolutionizing the way individuals approach their health and nutrition. By offering a comprehensive meal tracking platform, Full-Snack empowers users to take control of their dietary habits and make informed decisions about their meals.
 
 At Full-Snack, we understand that maintaining a balanced and nutritious diet can be a challenge in today's fast-paced world. Our mission is to simplify the process by providing users with a user-friendly and intuitive platform that seamlessly integrates into their daily routines.
