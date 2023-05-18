@@ -13,8 +13,9 @@ const handlebars = require('handlebars');
 // const passport = require('passport');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
 
+const PORT = process.env.PORT || 3001;
+app.use(express.static('public'));
 
 handlebars.registerHelper('eq', function (a, b, options) {
     return a === b ? options.fn(this) : options.inverse(this);
@@ -25,6 +26,7 @@ handlebars.registerHelper('eq', function (a, b, options) {
 app.use(express.json());
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true}));
+
 
 const hbs = exphbs.create();
 
