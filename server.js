@@ -6,6 +6,7 @@ const exphbs = require('express-handlebars');
 const models =  require('./models');
 const path = require('path');
 
+
 const handlebars = require('handlebars');
 
 // const helpers = require('./utils/helpers');
@@ -24,6 +25,7 @@ handlebars.registerHelper('eq', function (a, b, options) {
 
 //Establishes middleware functionality.
 app.use(express.json());
+app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true}));
 
 app.use(express.static(path.join(__dirname, 'public')));
