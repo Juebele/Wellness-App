@@ -21,7 +21,7 @@
   <nav>
     <div class="grid row text-center">
       <h1 class="col-8">Full-Snack</h1>
-      <div class="col-4">
+      <div class="col-4" id="construction">
         {{#if loggedIn}}
         
         <button id="logout" class="btn-no-style">Logout</button>
@@ -79,11 +79,16 @@
     <div class="col-2">Dinner</div>
     <textarea class="col-7 meal dinnerText" id="dinnerText" >enter a dinner plan here</textarea>
   </div>
+  </form>
 
+  <div>
   <button class="submit" type="button" value="confirm" onclick="submitMP(event)">Submit Day</button>
-    </form>
 
-<div class="container" id="mealPlanContainer" onclick="getData()">MP DATA CLICK HERE PLZ</div> 
+    <button onclick="getData()">Show my meal plan!</button>
+  </div>
+    <div class="container" id="be-wide"onclick="getData()">
+    <p id="mealPlanContainer">Data Here!</p>
+    </div>
 
  
  

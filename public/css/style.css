@@ -9,9 +9,6 @@ body {
     background-image: linear-gradient(to bottom right, white, lightblue, purple);
 }
 
-footer {
-}
-
 header textarea {
     margin: 1em;
 }
@@ -21,6 +18,10 @@ header h1 {
     font-family: 'Lobster', cursive;
     align-content: center;
     justify-content: center;
+}
+
+#construction {
+    background-image: url(../../images/under-construction.png);
 }
 
 header a {
@@ -35,9 +36,11 @@ header a {
 }
 
 button {
-    width: 1rem;
-    height: 5rem;
-    margin: .5em;
+    background-color:whitesmoke;
+    width: auto;
+    height: auto;
+    border-radius: 1em;
+    border-style: none;
 }
 
 ul {
@@ -56,10 +59,25 @@ form textarea {
     font-style: italic;
 }
 
-.submit {
+#mealPlanContainer {
+margin: 10px;
+background-color: whitesmoke;
+width: auto;
+height: auto;
+}
+
+p {
+    width: auto;
+}
+
+#be-wide {
+    width: auto;
+}
+
+/* .submit {
     background-color:whitesmoke;
     width: auto;
     height: auto;
     border-radius: 1em;
     border-style: none;
-}
+} */
