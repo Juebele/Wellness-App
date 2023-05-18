@@ -20,6 +20,10 @@ header h1 {
     justify-content: center;
 }
 
+#construction {
+    background-image: url(../../images/under-construction.png);
+}
+
 header a {
     margin-top: 1px;
     border-radius: .5em;
@@ -56,12 +60,18 @@ form textarea {
 }
 
 #mealPlanContainer {
+margin: 10px;
 background-color: whitesmoke;
 width: auto;
 height: auto;
-align-content: start;
-align-items: start;
-text-align: start;
+}
+
+p {
+    width: auto;
+}
+
+#be-wide {
+    width: auto;
 }
 
 /* .submit {
