@@ -54,18 +54,27 @@ router.get ('/signup', (req, res) => {
 
 // localhost:3001/api/mealplan
 // Get Info
-router.get('/', async (req, res) => {
-    try {
-      const mpUserData = await Mealplan.findAll({});
-      const mpMappedData = mpUserData.map((mealplan) => mealplan.get({plain: true}))
-      console.log(mpMappedData);
-      // res.status(200).json(mpUserData);
-      res.render('homepage');
-      //console.log(mpMappedData);
+// router.get('/mealplans', async (req, res) => {
+//     try {
+//       const mpUserData = await Mealplan.findAll({});
+//       const mpMappedData = mpUserData.map((mealplan) => mealplan.get({plain: true}))
+//       console.log(mpMappedData);
+//       // res.status(200).json(mpUserData);
+//       res.render('homepage', {mealplan: mpMappedData});
+//       //console.log(mpMappedData);
   
-    } catch (err) {
-      console.log(err);
-      res.status(500).json(err);
+//     } catch (err) {
+//       console.log(err);
+//       res.status(500).json(err);
+//     }
+//   });
+//code to show mealplans on homepage
+  router.get('/mealplans', async (req, res) => {
+    try {
+      const mealPlans = await Mealplan.findAll();
+      res.status(200).json(mealPlans);
+    } catch (error) {
+      console.error('Failed to fetch data:', error);
     }
   });
   
