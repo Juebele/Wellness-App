@@ -25,6 +25,7 @@ header button {
 header h1 {
     align-content: center;
     justify-content: center;
+    font-family: 'Lobster', cursive;
 }
 
 button {
@@ -55,7 +56,8 @@ ul {
     list-style: none;
 }
 
-#week-meals button  {
+button #week-meals {
+    font-family: 'Indie Flower', cursive;
     font-size: 12px;
     border-radius: 5px;
     height: auto;
