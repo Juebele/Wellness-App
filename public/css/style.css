@@ -57,7 +57,7 @@ textarea {
     margin-right: 300px;
 }
 
-#submit {
+.submit {
     background-color: aquamarine;
     width: auto;
 }
