@@ -34,6 +34,14 @@ button {
     margin: .5em;
 }
 
+header textarea {
+    font-family: 'Ysabeau', sans-serif;
+}
+
+#week-meals textarea {
+    font-family: 'Indie Flower', cursive;
+}
+
 /* #breakfast {
     width: 1rem;
     height: 5rem;
