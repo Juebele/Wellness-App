@@ -23,9 +23,17 @@ header h1 {
 header h4 
 {  
     font-size: 1rem;
-    font-family: 'Ysabeau', sans-serif;
     font-style: italic;
 }
+
+.padding {
+    margin: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
 #construction {
     background-image: url(../../images/under-construction.png);
 }
