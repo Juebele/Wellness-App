@@ -1,9 +1,9 @@
 html {
-    /* To make use of full height of page*/
     min-height: 100%;
     margin: 0;
 }
 body {
+    font-family: 'Ysabeau', sans-serif;
     min-height: 100%;
     margin: 0;
     background-image: linear-gradient(to bottom right, white, lightblue, purple);
@@ -23,6 +23,7 @@ header button {
 }
 
 header h1 {
+    font-family: 'Lobster', cursive;
     align-content: center;
     justify-content: center;
 }
@@ -33,29 +34,11 @@ button {
     margin: .5em;
 }
 
-/* #breakfast {
-    width: 1rem;
-    height: 5rem;
-    margin: .5em;
-}
-
-#lunch {
-    width: 1rem;
-    height: 5rem;
-    margin: .5em;
-}
-
-#dinner {
-    width: 1rem;
-    height: 5rem;
-    margin: .5em;
-} */
-
 ul {
     list-style: none;
 }
 
-#week-meals button  {
+/* #week-meals button  {
     font-size: 12px;
     border-radius: 5px;
     height: auto;
@@ -64,4 +47,4 @@ ul {
 
 #submit button {
     width:auto;
-}
+} */
