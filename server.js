@@ -5,6 +5,7 @@ const sequelize = require('./config/connection');
 const exphbs = require('express-handlebars');
 const models =  require('./models');
 
+
 const handlebars = require('handlebars');
 
 // const helpers = require('./utils/helpers');
@@ -22,6 +23,7 @@ handlebars.registerHelper('eq', function (a, b, options) {
 
 //Establishes middleware functionality.
 app.use(express.json());
+app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true}));
 
 const hbs = exphbs.create();
