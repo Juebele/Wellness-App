@@ -10,21 +10,46 @@
 </head>
 <body>
 
-  {{!-- <header>
+
+  <header>
+  <nav>
+
+  
+
     <div class="grid row text-center">
       <h1 class="col-8">FullSnack</h1>
       <div class="col-4">
         {{#if loggedIn}}
-        <button>Show Workout Plan</button>
-        <button>Log Out </button>
+        <button id="logout" class="btn-no-style">Logout</button>
+        {{!-- <button>Meal Plan</button> --}}
+        
         {{else}}
-        <button>Log In</button>
+        <a href="/login">Login</a>
         {{/if}}
+         {{!-- <button>Sign Up</button> --}}
+         {{#if signUp}}
+         <button>Meal Plan</button>
+         {{else}}
+         <a href="/signup">Sign Up</a>
+         {{/if}}
+
+         {{#if loggedIn}}
+         <script src="/public/js/logout.js"></script>
+         {{/if}}
+
+  
       </div>
     </div>
-  </header> --}}
 
-  <header>
+  </nav>
+  </header>
+  {{{body}}}
+  
+
+  
+
+
+  {{!-- <header>
     <div class="grid row text-center">
       <h1 class="col-6">Full-Snack</h1>
       <div class="col-6 grid row text-center">
@@ -47,7 +72,7 @@
         </div>
       </div>
     </div>
-  </header>
+  </header> --}}
 
 <div class="grid row text-center" id="week-meals">
   <div>
@@ -81,12 +106,22 @@
 
     
 <textarea class="col meal bfastText" id="bfastText">placeholder</textarea>
+  
+  </div>
+  <div class="grid row text-center" id="lunch">
+    <div class="col">Lunch</div>
+    
+
+
+    
+<textarea class="col meal bfastText" id="bfastText">placeholder</textarea>
    
   </div>
   <div class="grid row text-center" id="lunch">
     <div class="col">Lunch</div>
    
       
+
 <textarea class="col meal lunchText" id="lunchText">placeholder</textarea>
     
   </div>
