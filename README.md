@@ -1,4 +1,4 @@
-# Full-Stack Wellness App
+# Full-Snack Wellness App
 
 ![SC](./images/full-snack.png)
 
