@@ -73,7 +73,7 @@
     <h2>Meal Plan for the Week</h2>
   </div>
 
-  <div class="grid row text-center" id="days">
+  {{!-- <div class="grid row text-center" id="days">
     <p class="col">Meals / Days</p>
     <p class="col">Sunday</p>
     <p class="col">Monday</p>
@@ -82,29 +82,38 @@
     <p class="col">Thursday</p>
     <p class="col">Friday</p>
     <p class="col">Saturday</p>
-  </div>
+  </div> --}}
     {{!-- sunday's breakfast --}}
-    <div class="container">
+    <form class="container">
+      <select id="daySelect">
+        <option value="1">Monday</option>
+        <option value="2">Tuesday</option>
+        <option value="3">Wednesday</option>
+        <option value="4">Thursday</option>
+        <option value="5">Friday</option>
+        <option value="6">Saturday</option>
+        <option value="7">Sunday</option>
+      </select>
+
   <div class="grid row text-center" id="breakfast">
     <div class="col">Breakfast</div>
-    {{#each mealplan}}
-      <textarea class="col meal bfastText" id="bfastText">{{this.breakfast}}</textarea>
-    {{/each}}
+    
+<textarea class="col meal bfastText" id="bfastText">placeholder</textarea>
+  
   </div>
   <div class="grid row text-center" id="lunch">
     <div class="col">Lunch</div>
-    {{#each mealplan}}
-      <textarea class="col meal lunchText" id="lunchText">{{this.lunch}}</textarea>
-    {{/each}}
+    
+<textarea class="col meal lunchText" id="lunchText">placeholder</textarea>
+    
   </div>
   <div class="grid row text-center" id="dinner">
     <div class="col">Dinner</div>
-    {{#each mealplan}}
-      <textarea class="col meal dinnerText" id="dinnerText" >{{this.dinner}}</textarea>
-    {{/each}}
+    
+  <textarea class="col meal dinnerText" id="dinnerText" >placeholder</textarea>
   </div>
-  <button id="submit" type="button" onclick="submitMP()">Submit All</button>
-</div>
+  <button id="submit" type="button" value="confirm" onclick="submitMP(event)">Submit Day</button>
+    </form>
  
 <footer>
   <div>

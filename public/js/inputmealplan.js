@@ -1,13 +1,19 @@
 //const { Mealplan } = require("../../models");
+// const  runPage = async (event) => {
 
-
+// }
 const submitMP = async (event) => {
+
+   // event.preventDefault();
+
 
     //grab all elements from the page and assign to variable
     const mealPlanBfastElements = document.getElementsByClassName('bfastText');
     const mealPlanLunchElements = document.getElementsByClassName('lunchText');
     const mealPlanDinnerElements = document.getElementsByClassName('dinnerText');
-
+    const daySelect = document.getElementById('daySelect');
+  
+    console.log(daySelect.value);
     //get all inputted breakfast items
     const breakfastItems = [];
     for(i = 0; i < mealPlanBfastElements.length; i++) {
@@ -17,7 +23,9 @@ const submitMP = async (event) => {
       breakfastItems.push(jsonStringBfast);
      
     }
+ 
     const breakfastString = breakfastItems.join(',');
+    console.log(breakfastString);
 
     //get all inputted lunch items
     const lunchItems = [];
@@ -28,7 +36,9 @@ const submitMP = async (event) => {
      lunchItems.push(jsonStringLunch);
     
    }
+  
    const lunchString = lunchItems.join(',');
+   console.log(lunchString);
 
 
    //get all inputted dinner items
@@ -39,7 +49,9 @@ const submitMP = async (event) => {
      //console.log(jsonStringDinner);
     dinnerItems.push(jsonStringDinner);
    }
+   
    const dinnerString = dinnerItems.join(',');
+   console.log(dinnerString);
 
 
 
@@ -48,11 +60,16 @@ const submitMP = async (event) => {
       breakfast: breakfastString,
       lunch: lunchString,
       dinner: dinnerString,
-      dayid: 4,
+      dayid: daySelect.value,
       userid: 4
    });
-   console.log(combinedJSON);
 
+   console.log(combinedJSON);
+   //console.log(combinedJSON);
+   console.log(breakfastString.value);
+   // if(breakfastString == 'placeholder') {
+   //    console.log('listening');
+   // } else {
    //send the JSON data to the server
    try {
       const response = await fetch('/', {
@@ -64,7 +81,9 @@ const submitMP = async (event) => {
       });
 
       if(response.ok) {
-         console.log('Data sent to the database');
+         
+         window.alert("Success");
+
       } else {
          console.log('Failed to send data to the database');
       }
@@ -76,4 +95,3 @@ const submitMP = async (event) => {
 };
 
 
-submitMP();
