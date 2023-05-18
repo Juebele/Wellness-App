@@ -21,37 +21,21 @@
   <nav>
     <div class="grid row text-center">
       <h1 class="col-8">Full-Snack</h1>
-      <h1 class="col-8">Full-Snack</h1>
       <div class="col-4">
         {{#if loggedIn}}
-        <button id="logout" class="btn-no-style">Logout</button>
-        {{!-- <button>Meal Plan</button> --}}
         
         <button id="logout" class="btn-no-style">Logout</button>
-        {{!-- <button>Meal Plan</button> --}}
         
         {{else}}
         <a href="/login">Log In</a>
-        <a href="/login">Log In</a>
         {{/if}}
-         {{!-- <button>Sign Up</button> --}}
-         {{#if signUp}}
-         <button>Meal Plan</button>
-         {{else}}
-         <a href="/signup">Sign Up</a>
-         {{/if}}
-         {{!-- <button>Sign Up</button> --}}
+
          {{#if signUp}}
          <button>Meal Plan</button>
          {{else}}
          <a href="/signup">Sign Up</a>
          {{/if}}
 
-         {{#if loggedIn}}
-         <script src="/public/js/logout.js"></script>
-         {{/if}}
-
-  
          {{#if loggedIn}}
          <script src="/public/js/logout.js"></script>
          {{/if}}
@@ -62,23 +46,11 @@
   </nav>
   </header>
   {{{body}}}
-  {{{body}}}
 
 <div class="grid row text-center" id="week-meals">
   <div>
     <h2>Meal Plan for the Week</h2>
   </div>
-
-    <form class="container">
-      <select id="daySelect">
-        <option value="1">Monday</option>
-        <option value="2">Tuesday</option>
-        <option value="3">Wednesday</option>
-        <option value="4">Thursday</option>
-        <option value="5">Friday</option>
-        <option value="6">Saturday</option>
-        <option value="7">Sunday</option>
-      </select>
 
     <form class="container">
       <select id="daySelect">
@@ -109,11 +81,8 @@
     <div class="col">Dinner</div>
     
   <textarea class="col meal dinnerText" id="dinnerText" >placeholder</textarea>
-    
-  <textarea class="col meal dinnerText" id="dinnerText" >placeholder</textarea>
+
   </div>
-  <button id="submit" type="button" value="confirm" onclick="submitMP(event)">Submit Day</button>
-    </form>
   <button id="submit" type="button" value="confirm" onclick="submitMP(event)">Submit Day</button>
     </form>
  
