@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
     /* To make use of full height of page*/
     min-height: 100%;
