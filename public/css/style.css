@@ -50,7 +50,10 @@ ul {
 
 textarea {
     justify-content: center;
-    
     margin-right: 300px;
 }
 
+#submit {
+    background-color: aquamarine;
+    width: auto;
+}
