@@ -2,17 +2,21 @@
 
 ![SC](./images/full-snack.png)
 
+## Deployed APP
+
+https://gt-wellness-app.herokuapp.com/
+
+## Github Repo
+
+https://github.com/Juebele/Wellness-App
+
 ## Who We Are
-Full-Snack is  dedicated to revolutionizing the way individuals approach their health and nutrition. By offering a comprehensive meal tracking platform, Full-Snack empowers users to take control of their dietary habits and make informed decisions about their meals.
 
-At Full-Snack, we understand that maintaining a balanced and nutritious diet can be a challenge in today's fast-paced world. Our mission is to simplify the process by providing users with a user-friendly and intuitive platform that seamlessly integrates into their daily routines.
-
+Full-Snack is an application dedicated to changing the way individuals approach their health and wellness. By offering a comprehensive meal tracking platform, Full-Snack empowers users to take control of their dietary habits by making informed decisions about their meals. We understand that maintaining a balanced and nutritious diet can be a challenge in today's fast-paced world, so, our mission is to simplify the process by providing users with a user-friendly and intuitive platform that seamlessly integrates into their daily routines.
 
 ## Our Why
 
-We created this application to practice full-stack web development and demonstrate our knowledge of multiple enterprise-level technologies.
-We wanted to include a polished UI, use of multiple API routes, and additional technology that we have not used before.
-
+This app was created as a means to practice and showcase our full-stack web development skills. Through the implementation of a polished UI, utilization of multiple API routes, and incorporation of new technologies, we aimed to demonstrate our ability to build an enterprise-level application. This project served as a platform to demonstrate our ability to create user-friendly interfaces, handle complex data interactions, and adapt a new technology.
 
 ## How does it work?
 
